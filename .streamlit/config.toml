@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#000000"  # Anthropic-style blue
+backgroundColor="#fff2e1"
+secondaryBackgroundColor="#969696"
+textColor="#000000"
+font="sans serif"

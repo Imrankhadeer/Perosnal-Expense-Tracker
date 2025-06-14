@@ -1,0 +1,87 @@
+:root {
+    --font-primary: ui-sans-serif, system-ui, sans-serif,
+                    "Apple Color Emoji", "Segoe UI Emoji",
+                    "Segoe UI Symbol", "Noto Color Emoji";
+
+    --color-bg-dark: #1e1e1e;
+    --color-tab-inactive: #2c2c2c;
+    --color-tab-inactive-text: #cccccc;
+    --color-tab-active: #007bff;
+    --color-tab-active-text: white;
+    --color-tab-hover: #3a3a3a;
+}
+
+/* Global font */
+body, html {
+    font-family: var(--font-primary);
+    font-weight: normal;
+}
+
+/* Main title */
+.main-title {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: var(--color-tab-active-text);
+    margin-top: 20px;
+}
+
+/* Option menu base style */
+div[data-testid="option-menu"] a {
+    font-size: 16px !important;
+    font-weight: normal !important;
+    font-family: var(--font-primary);
+    color: var(--color-tab-inactive-text) !important;
+    background-color: var(--color-tab-inactive);
+    margin: 0 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover style */
+div[data-testid="option-menu"] a:hover {
+    background-color: var(--color-tab-hover);
+    color: white !important;
+}
+
+/* Active (selected) tab */
+div[data-testid="option-menu"] a[data-active="true"] {
+    background-color: var(--color-tab-active) !important;
+    color: var(--color-tab-active-text) !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.expense-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.expense-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* For smaller screens */
+    gap: 10px;
+}
+
+.expense-value {
+    font-weight: bold;
+    color: #000000;
+    flex: 1;
+    min-width: 80px;
+}
+
+.expense-category,
+.expense-description,
+.expense-date {
+    flex: 1;
+    min-width: 120px;
+    color: #333;
+}
