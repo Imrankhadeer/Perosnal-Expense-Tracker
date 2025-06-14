@@ -1,2 +1,19 @@
-# Perosnal-Expense-Tracker
-A simple and smart expense tracker for individuals and families. Built with Streamlit and SQLite, it lets you manage accounts, track spending, view charts, and get monthly summaries with helpful budgeting tips all in one secure, easy-to-use web app.
+Codes:
+- **Frontend**: [Streamlit](https://streamlit.io/)
+- **Backend**: Python
+- **Database**: SQLite
+- **Authentication**: Custom secure login logic
+
+---
+
+## 🧑‍💻 How to Run Locally
+
+### 🔄 Requirements
+
+- Python 3.8+
+- `pip install -r requirements.txt`
+
+### ▶️ Run the App
+
+```bash
+streamlit run app.py
